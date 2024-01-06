@@ -1,1 +1,1 @@
-Live Site: 
+Live Site: https://rdssurya-thumbstack-assignment.netlify.app
