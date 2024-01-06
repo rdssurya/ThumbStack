@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <title>My Portfolio</title>
+</head>
+<body>
+    <div class="introduction">
+        <h3>Hello there! Welcome to my portfolio</h3>
+        <h5 class="about">My name is <span class="name"> Deva Sarath Surya </span> and I am an enthusiastic Frontend Developer with a strong foundation in Web Development. I thrive on bringing ideas to life through clean and engaging user interfaces. Having crafted industry-grade projects from the ground up, I am armed with a diverse set of technological skills essential for tackling various tech challenges.</h5>
+        <h5 class="about">Check out my projects below:</h5>
+        <div class="project-buttons">
+            <a href="#qkart"><button type="button" class="btn btn-dark">QKart</button></a>
+            <a href="#qtrip"><button type="button" class="btn btn-dark">QTrip</button></a>
+            <a href="#xboard"><button type="button" class="btn btn-dark">XBoard</button></a>
+        </div>
+    </div>
+    <h3>Technical Skills</h3>
+    <div class="skills">
+        <div class="skills-child" id="skills-children-a">     
+        </div>
+        <div class="skills-child" id="skills-children-b">
+        </div>
+    </div>
+    <h3>My Projects</h3>
+    <div class="projects">
+        <div class="project-container" id="qkart">
+            <div class="project-title">QKart</div>
+            <div class="project-details">
+                QKart is an e-commerce application offering a variety of products for customers to choose from. During the course of this project,
+                <ul>
+                    <li>Implemented the core logic for authentication, shopping cart and checkout</li>
+                    <li>Improved UI by adding responsive design elements for uniform experience across different devices</li>
+                    <li>Utilized REST APIs to dynamically load and render data served by the backend server</li>
+                </ul>
+            </div>
+            <div class="project-skills">
+                <span class="badge text-bg-success">React JS</span>
+                <span class="badge text-bg-success">Node JS</span>
+                <span class="badge text-bg-success">Express JS</span>
+                <span class="badge text-bg-success">MongoDB</span>
+                <span class="badge text-bg-success">Mongoose</span>
+                <span class="badge text-bg-success">JWT Token</span>
+                <span class="badge text-bg-success">Material UI</span>
+                <span class="badge text-bg-success">Forms</span>
+                <span class="badge text-bg-success">Responsive Design</span>
+                <span class="badge text-bg-success">REST API</span>
+                <span class="badge text-bg-success">Debouncing</span>
+                <span class="badge text-bg-success">Netlify</span>
+            </div>
+            <a href="https://rdssurya-qkart-frontend.netlify.app/" target="_blank"><button type="button" class="btn btn-warning" style="margin-top: 10px;">Project Demo</button></a>
+        </div>
+        <div class="project-container" id="qtrip">
+            <div class="project-title">QTrip</div>
+            <div class="project-details">
+                QTrip is a travel website aimed at travellers looking for a multitude of adventures in different cities. During the course of this project,
+                <ul>
+                    <li>Created web pages using HTML and CSS and made them dynamic using JavaScript</li>
+                    <li>Improved UX with multi-select filters, image carousels</li>
+                    <li>Utilised localStorage to persist user preferences at client-side</li>
+                </ul>
+            </div>
+            <div class="project-skills">
+                <span class="badge text-bg-success">HTML</span>
+                <span class="badge text-bg-success">CSS</span>
+                <span class="badge text-bg-success">JavaScript</span>
+                <span class="badge text-bg-success">Bootstrap</span>
+                <span class="badge text-bg-success">Event Handling</span>
+                <span class="badge text-bg-success">Carousels</span>
+                <span class="badge text-bg-success">Conditional Rendering</span>
+                <span class="badge text-bg-success">DOM Manipulation</span>
+                <span class="badge text-bg-success">Developer Tools</span>
+                <span class="badge text-bg-success">JSON</span>
+            </div>
+            <a href="https://qtrip-dynamic-rdssurya.netlify.app/" target="_blank"><button type="button" class="btn btn-warning" style="margin-top: 10px;">Project Demo</button></a>
+        </div>
+        <div class="project-container" id="xboard">
+            <div class="project-title">XBoard</div>
+            <div class="project-details">
+                XBoard is a News Feed website that will feature the latest news for select topics, from Flipboard. During the course of this project,
+                <ul>
+                    <li>Built XBoard using HTML, CSS, Bootstrap and JavaScript from scratch</li>
+                    <li>Used Accordions and Image Carousel to improve UI</li>
+                    <li>Fetched news content from flipboard's RSS feed using REST API</li>
+                </ul>
+            </div>
+            <div class="project-skills">
+                <span class="badge text-bg-success">Figma</span>
+                <span class="badge text-bg-success">JavaScript</span>
+                <span class="badge text-bg-success">Bootstrap</span>
+                <span class="badge text-bg-success">Accordions</span>
+                <span class="badge text-bg-success">Carousels</span>
+                <span class="badge text-bg-success">HTML</span>
+                <span class="badge text-bg-success">CSS</span>
+                <span class="badge text-bg-success">Responsive Design</span>
+                <span class="badge text-bg-success">Netlify</span>
+            </div>
+            <a href="https://crio-feed-rdss.netlify.app/" target="_blank"><button type="button" class="btn btn-warning" style="margin-top: 10px;">Project Demo</button></a>
+        </div>
+    </div>
+    <form class="form" onsubmit="handleSubmit(event)">
+        <h3>Contact Form</h3>
+        <div class="form-content">
+            <label style="width: 30%;">Name: </label>
+            <input id="username" style="width: 70%;" placeholder="Enter your name" type="text" required/>
+        </div>
+        <div class="form-content">
+            <label style="width: 30%;">Email:</label>
+            <input id="useremail" style="width: 70%;" placeholder="Email address" type="email"  required/>
+        </div>
+        <div class="form-content">
+            <label style="width: 30%;">Message:</label>
+            <textarea id="usermessage" style="width: 70%; resize: none;" placeholder="Message" class="message" maxlength="100"></textarea>
+        </div>
+        <div>
+            <button type="submit" class="btn btn-info">Send Details</button>
+        </div>
+    </form>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
